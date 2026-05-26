@@ -43,5 +43,53 @@
     $username = $_POST['username'];
     echo"$username"; 
     ?>
+    <?php
+    $age = 20;
+    if($age >= 18) {
+        echo "You are an adult.";
+    } else {
+        echo "You are a minor.";
+    }?>
+
+
+
+
+<?php
+ <form action="index.php" method="post">
+    Enter Score:
+    <input type="number" name="score">
+    <input type="submit" value="Check Grade">
+</form>
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $score = $_POST["score"];
+
+    if ($score >= 80) {
+        echo "Grade A";
+    }
+
+    elseif ($score >= 70) {
+        echo "Grade B";
+    }
+
+    elseif ($score >= 60) {
+        echo "Grade C";
+    }
+
+    elseif ($score >= 50) {
+        echo "Grade D";
+    }
+
+    else {
+        echo "Grade E";
+    }
+}
+
+?>
+
 </body>
+</html>
 </html>
