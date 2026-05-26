@@ -54,8 +54,8 @@
 
 
 
-<?php
- <form action="index.php" method="post">
+
+<form action="index.php" method="post">
     Enter Score:
     <input type="number" name="score">
     <input type="submit" value="Check Grade">
@@ -91,5 +91,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 </body>
-</html>
 </html>
